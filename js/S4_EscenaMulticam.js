@@ -1,7 +1,7 @@
 /**
  * EscenaMulticam.js
  * 
- * Seminario AGM. Construir una escena básica animada, con gui, iluminacion,
+ * Seminario AGM. Construir una escena bÃ¡sica animada, con gui, iluminacion,
  * texturas, video como textura en 4 viewports
  * 
  * @author R.Vivo' <rvivo@upv.es>
@@ -277,8 +277,12 @@ function updateAspectRatio()
     if(ar>1){
         alzado.left = planta.left = perfil.left = -L*ar;
         alzado.right = planta.right =perfil.right = L*ar;
+        alzado.top = planta.top= perfil.top=  L;
+        alzado.bottom = planta.bottom = perfil.bottom = -L;
     }
     else{
+        alzado.left = planta.left = perfil.left = -L;
+        alzado.right = planta.right =perfil.right = L;
         alzado.top = planta.top= perfil.top=  L/ar;
         alzado.bottom = planta.bottom = perfil.bottom = -L/ar;       
     }
