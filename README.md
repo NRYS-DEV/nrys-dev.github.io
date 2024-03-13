@@ -17,3 +17,5 @@ npm run build
 ```bash
 npm run serve
 ```
+La página estará accesible vía:
+http://localhost:8080/
