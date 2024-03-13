@@ -3,14 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "http://nrys-dev.github.io/porsche.html",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NRYS-DEV/nrys-dev.github.io.git"
-  },
   "scripts": {
     "build": "webpack build",
-    "deploy": "gh-pages -d dist",
     "watch": "webpack --watch",
     "serve": "webpack serve --open",
     "serve:reload": "webpack build && webpack serve"
@@ -38,7 +32,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.2.0",
-    "gh-pages": "^6.1.1",
     "raw-loader": "^4.0.2",
     "serve": "^13.0.2",
     "webpack": "^5.67.0",
